@@ -33,7 +33,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectPhoto }) => {
         </div>
 
         {/* Filter Categories Buttons */}
-        <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
           {galleryCategories.map((cat) => {
             const isActive = selectedCategory === cat.id;
             return (

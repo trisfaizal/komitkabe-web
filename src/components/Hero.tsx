@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
               Ekosistem Praktisi IT{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-navy via-blue-600 to-brand-navy dark:from-blue-400 dark:via-sky-300 dark:to-indigo-400">
                 Kawasan Industri
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
               <a
                 href="#tentang"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md shadow-brand-navy/25 transition-all duration-200 active:scale-95"

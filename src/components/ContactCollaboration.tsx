@@ -35,7 +35,7 @@ export const ContactCollaboration: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-stretch mb-12">
           {/* Card 1: Registrasi Member & Event Bulanan */}
           <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-brand-red/30 dark:border-brand-red/40 shadow-sm flex flex-col h-full relative group hover:shadow-lg transition-all">
             <div className="flex-1">
@@ -181,12 +181,12 @@ export const ContactCollaboration: React.FC = () => {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3.5 p-4 rounded-xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border hover:border-brand-navy/30 dark:hover:border-blue-500/30 hover:shadow-md transition-all group"
+              className="flex items-center gap-3.5 p-4 rounded-xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border hover:border-brand-navy/30 dark:hover:border-blue-500/30 hover:shadow-md transition-all group min-w-0"
             >
-              <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-dark-surface border border-slate-100 dark:border-dark-border group-hover:scale-110 transition-transform">
+              <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-dark-surface border border-slate-100 dark:border-dark-border group-hover:scale-110 transition-transform shrink-0">
                 {getSocialIcon(social.icon)}
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden min-w-0">
                 <span className="text-[11px] font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider block">
                   {social.platform}
                 </span>

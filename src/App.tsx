@@ -46,10 +46,10 @@ export const App: React.FC = () => {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 dark:bg-dark-bg dark:text-slate-100 transition-colors duration-200">
+      <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 dark:bg-dark-bg dark:text-slate-100 transition-colors duration-200 overflow-x-clip">
         <Navbar />
 
-        <main className="flex-1">
+        <main className="flex-1 w-full overflow-x-clip">
           <Hero />
           <StatusTicker />
           <About />

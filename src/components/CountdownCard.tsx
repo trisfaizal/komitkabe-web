@@ -129,36 +129,36 @@ export const CountdownCard: React.FC = () => {
             Edisi sedang berlangsung / silakan cek portal ITCG.
           </p>
         ) : (
-          <div className="grid grid-cols-4 gap-2 text-center">
+          <div className="grid grid-cols-4 gap-1.5 sm:gap-2 text-center">
             <div className="p-1.5 rounded-lg bg-white dark:bg-dark-bg border border-slate-200/80 dark:border-dark-border">
-              <span className="block text-base font-extrabold text-brand-navy dark:text-blue-400 tabular-nums leading-tight">
+              <span className="block text-sm sm:text-base font-extrabold text-brand-navy dark:text-blue-400 tabular-nums leading-tight">
                 {String(timeLeft.days).padStart(2, '0')}
               </span>
-              <span className="text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Hari</span>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Hari</span>
             </div>
             <div className="p-1.5 rounded-lg bg-white dark:bg-dark-bg border border-slate-200/80 dark:border-dark-border">
-              <span className="block text-base font-extrabold text-brand-navy dark:text-blue-400 tabular-nums leading-tight">
+              <span className="block text-sm sm:text-base font-extrabold text-brand-navy dark:text-blue-400 tabular-nums leading-tight">
                 {String(timeLeft.hours).padStart(2, '0')}
               </span>
-              <span className="text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Jam</span>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Jam</span>
             </div>
             <div className="p-1.5 rounded-lg bg-white dark:bg-dark-bg border border-slate-200/80 dark:border-dark-border">
-              <span className="block text-base font-extrabold text-brand-navy dark:text-blue-400 tabular-nums leading-tight">
+              <span className="block text-sm sm:text-base font-extrabold text-brand-navy dark:text-blue-400 tabular-nums leading-tight">
                 {String(timeLeft.minutes).padStart(2, '0')}
               </span>
-              <span className="text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Menit</span>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Menit</span>
             </div>
             <div className="p-1.5 rounded-lg bg-white dark:bg-dark-bg border border-slate-200/80 dark:border-dark-border">
-              <span className="block text-base font-extrabold text-brand-red dark:text-red-400 tabular-nums leading-tight">
+              <span className="block text-sm sm:text-base font-extrabold text-brand-red dark:text-red-400 tabular-nums leading-tight">
                 {String(timeLeft.seconds).padStart(2, '0')}
               </span>
-              <span className="text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Detik</span>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Detik</span>
             </div>
           </div>
         )}
 
-        <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-dark-muted pt-1">
-          <div className="flex items-center gap-1 truncate">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 text-[11px] text-slate-500 dark:text-dark-muted pt-1">
+          <div className="flex items-center gap-1 min-w-0">
             <MapPin className="w-3 h-3 text-brand-red shrink-0" />
             <span className="truncate">{itcgUpcoming.location.venue}</span>
           </div>
@@ -166,7 +166,7 @@ export const CountdownCard: React.FC = () => {
             href={siteConfig.itcgUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 font-bold text-brand-navy dark:text-blue-400 hover:text-brand-red shrink-0 ml-2"
+            className="flex items-center gap-1 font-bold text-brand-navy dark:text-blue-400 hover:text-brand-red shrink-0"
           >
             <span>itcg.komitkabe.id</span>
             <ExternalLink className="w-3 h-3" />

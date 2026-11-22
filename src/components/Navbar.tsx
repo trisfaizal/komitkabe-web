@@ -54,12 +54,12 @@ export const Navbar: React.FC = () => {
           <img
             src="/assets/light-logo.webp"
             alt="KOMITKABE"
-            className="h-8 md:h-9 w-auto object-contain dark:hidden"
+            className="h-7 sm:h-8 md:h-9 w-auto object-contain dark:hidden"
           />
           <img
             src="/assets/dark-logo.webp"
             alt="KOMITKABE"
-            className="h-8 md:h-9 w-auto object-contain hidden dark:block"
+            className="h-7 sm:h-8 md:h-9 w-auto object-contain hidden dark:block"
           />
         </a>
 
@@ -136,7 +136,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Hamburger & Theme Toggle Button */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex md:hidden items-center gap-1.5 sm:gap-2 shrink-0">
           {/* Mobile Direct Theme Toggle Button */}
           <button
             onClick={() => {
@@ -144,7 +144,7 @@ export const Navbar: React.FC = () => {
               else if (theme === 'light') setTheme('dark');
               else setTheme('auto');
             }}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-dark-surface border border-slate-200 dark:border-dark-border"
+            className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg bg-slate-100 dark:bg-dark-surface border border-slate-200 dark:border-dark-border"
             aria-label="Ganti tema"
             title={`Mode: ${theme}`}
           >
@@ -153,7 +153,7 @@ export const Navbar: React.FC = () => {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-dark-surface text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-dark-border focus:outline-none"
+            className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg bg-slate-100 dark:bg-dark-surface text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-dark-border focus:outline-none"
             aria-label={mobileMenuOpen ? 'Tutup menu' : 'Buka menu'}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -169,7 +169,7 @@ export const Navbar: React.FC = () => {
               key={link.label}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-dark-surface"
+              className="flex items-center min-h-[44px] px-3.5 py-2.5 rounded-lg text-base font-medium text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-dark-surface"
             >
               {link.label}
             </a>
@@ -190,7 +190,7 @@ export const Navbar: React.FC = () => {
                     onClick={() => {
                       setTheme(opt.mode);
                     }}
-                    className={`flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-xs font-medium border ${
+                    className={`min-h-[44px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-xs font-medium border ${
                       isActive
                         ? 'bg-brand-navy text-white border-brand-navy dark:bg-blue-600 dark:border-blue-500'
                         : 'bg-slate-50 dark:bg-dark-surface text-slate-700 dark:text-slate-300 border-slate-200 dark:border-dark-border'
@@ -209,7 +209,8 @@ export const Navbar: React.FC = () => {
               href={siteConfig.connectUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-center font-semibold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600"
+              onClick={() => setMobileMenuOpen(false)}
+              className="min-h-[44px] flex items-center justify-center gap-2 w-full py-3 rounded-xl text-center font-semibold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600"
             >
               <span>Portal Member (Connect)</span>
               <ExternalLink className="w-4 h-4" />

@@ -31,7 +31,7 @@ export const ItcgHistory: React.FC<ItcgHistoryProps> = ({ onPhotoClick }) => {
         </div>
 
         {/* Interactive Year Tabs */}
-        <div className="flex items-center justify-center gap-2 sm:gap-4 mb-10 overflow-x-auto pb-2 scrollbar-none">
+        <div className="flex items-center justify-start sm:justify-center gap-2 sm:gap-4 mb-10 overflow-x-auto pb-2 px-1 scrollbar-none">
           {itcgHistory.map((item) => {
             const isActive = item.id === activeTab;
             return (
@@ -216,7 +216,7 @@ export const ItcgHistory: React.FC<ItcgHistoryProps> = ({ onPhotoClick }) => {
                     href={siteConfig.itcgPortalUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-red hover:bg-brand-red-hover text-white shadow-md transition-all active:scale-95"
+                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-red hover:bg-brand-red-hover text-white shadow-md transition-all active:scale-95"
                   >
                     <span>Kunjungi Portal Resmi ITCG 2027</span>
                     <ExternalLink className="w-3.5 h-3.5" />

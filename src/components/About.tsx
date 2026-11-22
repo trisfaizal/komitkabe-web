@@ -57,7 +57,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Animated Community Metrics */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {siteConfig.metrics.map((metric, idx) => (
             <div
               key={idx}
@@ -87,13 +87,13 @@ export const About: React.FC = () => {
           <div className="absolute top-4 right-6 text-brand-navy/10 dark:text-blue-500/10 pointer-events-none">
             <Quote className="w-24 h-24" />
           </div>
-          <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center gap-6">
+          <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
             <img
               src="/images/chairman.webp"
               alt={siteConfig.chairmanQuote.author}
-              className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 object-cover object-top rounded-2xl shadow-md border border-slate-200/90 dark:border-dark-border"
+              className="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 object-cover object-top rounded-2xl shadow-md border border-slate-200/90 dark:border-dark-border"
             />
-            <div className="flex-1 space-y-3 text-center md:text-left">
+            <div className="flex-1 space-y-3 text-left">
               <blockquote className="text-base sm:text-lg italic text-slate-800 dark:text-slate-200 leading-relaxed font-medium">
                 "{siteConfig.chairmanQuote.quote}"
               </blockquote>
@@ -124,7 +124,7 @@ export const About: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4">
             {siteConfig.coreValues.map((val, idx) => (
               <div
                 key={idx}
@@ -147,7 +147,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Vision & Mission Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
           {/* Vision Box */}
           <div className="lg:col-span-5 p-8 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-navy-light text-white shadow-xl relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
