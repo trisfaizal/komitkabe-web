@@ -42,16 +42,16 @@ export const itcgUpcoming: ItcgUpcomingConfig = {
     isLive: false
   },
   highlights: [
-    "Pillar 01: Artificial Intelligence — Industrial Computer Vision, Predictive Quality & Smart Operations",
-    "Pillar 02: Industrial IoT & OT Convergence — SCADA Integration, Edge Computing & Real-Time Telemetry",
-    "Pillar 03: Zero-Trust Cybersecurity — ICS/SCADA Defense, Ransomware Mitigation & Enterprise Resilience",
+    "Pillar 01: Artificial Intelligence - Industrial Computer Vision, Predictive Quality & Smart Operations",
+    "Pillar 02: Industrial IoT & OT Convergence - SCADA Integration, Edge Computing & Real-Time Telemetry",
+    "Pillar 03: Zero-Trust Cybersecurity - ICS/SCADA Defense, Ransomware Mitigation & Enterprise Resilience",
     "30 Exhibition Booths & Exclusive Executive Industry Networking"
   ],
   scheduleOverview: [
-    { time: "Hari 1 — 08:00 - 09:30", activity: "Registrasi, Welcome Coffee & Morning Networking Exhibition" },
-    { time: "Hari 1 — 09:30 - 11:45", activity: "Opening Plenary: INTELLIGENCE IN MOTION — Driving Smart Industry" },
-    { time: "Hari 1 — 13:00 - 16:30", activity: "Breakout Sessions: AI in Manufacturing, OT Convergence & Zero Trust" },
-    { time: "Hari 1 — 19:00 - 21:30", activity: "Gala Dinner, Awarding & IT Leaders Night" },
-    { time: "Hari 2 — 08:30 - 12:00", activity: "Tech Showcase, Community Roundtable & Closing Assembly" }
+    { time: "Hari 1 - 08:00 - 09:30", activity: "Registrasi, Welcome Coffee & Morning Networking Exhibition" },
+    { time: "Hari 1 - 09:30 - 11:45", activity: "Opening Plenary: INTELLIGENCE IN MOTION - Driving Smart Industry" },
+    { time: "Hari 1 - 13:00 - 16:30", activity: "Breakout Sessions: AI in Manufacturing, OT Convergence & Zero Trust" },
+    { time: "Hari 1 - 19:00 - 21:30", activity: "Gala Dinner, Awarding & IT Leaders Night" },
+    { time: "Hari 2 - 08:30 - 12:00", activity: "Tech Showcase, Community Roundtable & Closing Assembly" }
   ]
 };

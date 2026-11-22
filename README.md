@@ -1,6 +1,6 @@
 # KOMITKABE Official Website (Komunitas IT Kawasan Industri)
 
-Website profil resmi **KOMITKABE** (*Komunitas IT Kawasan Industri* — koridor Bekasi, Cikarang, Karawang, dan sekitarnya). Dibangun dengan arsitektur **100% Static Data Config** tanpa database, cepat, responsif, beranimasi halus, dan siap di-deploy langsung ke **Cloudflare Pages**.
+Website profil resmi **KOMITKABE** (*Komunitas IT Kawasan Industri*, koridor Bekasi, Cikarang, Karawang, dan sekitarnya). Dibangun dengan arsitektur **100% Static Data Config** tanpa database, cepat, responsif, beranimasi halus, dan siap di-deploy langsung ke **Cloudflare Pages**.
 
 > Tagline: *"Connecting people. Sharing knowledge. Building the future."*
 

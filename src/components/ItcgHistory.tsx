@@ -181,7 +181,7 @@ export const ItcgHistory: React.FC<ItcgHistoryProps> = ({ onPhotoClick }) => {
                   {currentEvent.photos.map((photo, pIdx) => (
                     <button
                       key={pIdx}
-                      onClick={() => onPhotoClick(photo.url, photo.caption, `${currentEvent.title} — Dokumentasi ${pIdx + 1}`)}
+                      onClick={() => onPhotoClick(photo.url, photo.caption, `${currentEvent.title} - Dokumentasi ${pIdx + 1}`)}
                       className="group relative aspect-video rounded-xl overflow-hidden bg-slate-200 dark:bg-dark-surface border border-slate-200 dark:border-dark-border cursor-pointer focus:outline-none"
                     >
                       <img
@@ -209,7 +209,7 @@ export const ItcgHistory: React.FC<ItcgHistoryProps> = ({ onPhotoClick }) => {
                   Menuju 6th IT Community Gathering 2027
                 </h4>
                 <p className="text-xs text-blue-100 leading-relaxed">
-                  <strong>Tema:</strong> <em>INTELLIGENCE IN MOTION — Driving Smart Industry. Securing the Future.</em> Dilaksanakan di Sutan Raja Hotel & Convention Centre, Soreang, Bandung (16-17 Januari 2027). Slot delegasi & pameran booth industri kini telah dibuka!
+                  <strong>Tema:</strong> <em>INTELLIGENCE IN MOTION: Driving Smart Industry. Securing the Future.</em> Dilaksanakan di Sutan Raja Hotel & Convention Centre, Soreang, Bandung (16 - 17 Januari 2027). Slot delegasi & pameran booth industri kini telah dibuka!
                 </p>
                 <div className="pt-2">
                   <a

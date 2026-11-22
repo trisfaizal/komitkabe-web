@@ -134,7 +134,7 @@ export const Footer: React.FC = () => {
           {/* Bottom Copyright Bar */}
           <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-blue-200/80">
             <div>
-              © 2006–{new Date().getFullYear()} KOMITKABE (Komunitas IT Kawasan Industri). Hak Cipta Dilindungi.
+              © 2006 - {new Date().getFullYear()} KOMITKABE (Komunitas IT Kawasan Industri). Hak Cipta Dilindungi.
             </div>
             <div className="flex items-center gap-1 text-blue-200/90">
               <span>Dikelola dengan</span>

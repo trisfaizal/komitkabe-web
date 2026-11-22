@@ -74,7 +74,7 @@ export const siteConfig: SiteConfig = {
   motto: "The Power of Collaborations",
   description: "Berawal dari pertemuan para praktisi IT di Kawasan Industri EJIP dan Lippo Cikarang pada tahun 2006, KOMITKABE tumbuh menjadi komunitas profesional yang mempererat jejaring, mendorong pertukaran pengetahuan, dan membangun kolaborasi lintas perusahaan di kawasan industri.",
   historyIntro: "Berawal dari pertemuan para praktisi IT di Kawasan Industri EJIP dan Lippo Cikarang pada tahun 2006, KOMITKABE tumbuh menjadi komunitas profesional yang mempererat jejaring, mendorong pertukaran pengetahuan, dan membangun kolaborasi lintas perusahaan di kawasan industri.",
-  historySectors: "Dengan anggota yang berasal dari beragam sektor—mulai dari otomotif, elektronik, farmasi, makanan dan minuman, logistik, hingga kesehatan—KOMITKABE menjadi ruang bagi para praktisi IT untuk memperluas wawasan, mengembangkan kompetensi, serta menjalankan pertemuan rutin bulanan bersama vendor teknologi dan gelaran akbar IT Community Gathering (ITCG).",
+  historySectors: "Dengan anggota yang berasal dari beragam sektor (mulai dari otomotif, elektronik, farmasi, makanan dan minuman, logistik, hingga kesehatan), KOMITKABE menjadi ruang bagi para praktisi IT untuk memperluas wawasan, mengembangkan kompetensi, serta menjalankan pertemuan rutin bulanan bersama vendor teknologi dan gelaran akbar IT Community Gathering (ITCG).",
   industrySectors: [
     "Otomotif",
     "Elektronik",
@@ -169,7 +169,7 @@ export const siteConfig: SiteConfig = {
     whatsapp: "+62 821-2299-090",
     whatsappUrl: "https://wa.me/628212299090?text=Halo%20Pengurus%20KOMITKABE%2C%20saya%20ingin%20bertanya%20mengenai%20komunitas",
     address: "Kawasan Industri Jababeka, Cikarang, Kab. Bekasi, Jawa Barat",
-    region: "Bekasi — Cikarang — Karawang & Sekitarnya"
+    region: "Bekasi - Cikarang - Karawang & Sekitarnya"
   },
   metrics: [
     {
