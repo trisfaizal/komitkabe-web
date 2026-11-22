@@ -14,10 +14,10 @@ export const ItcgHistory: React.FC<ItcgHistoryProps> = ({ onPhotoClick }) => {
   const currentEvent = itcgHistory.find((item) => item.id === activeTab) || itcgHistory[0];
 
   return (
-    <section id="itcg" className="py-20 lg:py-28 relative scroll-mt-20 bg-slate-100/50 dark:bg-dark-surface/40 border-y border-slate-200/60 dark:border-dark-border/60">
+    <section id="itcg" className="py-20 md:py-24 lg:py-28 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-white dark:bg-[#060d1a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-red/10 text-brand-red dark:bg-brand-red/20 dark:text-red-400 border border-brand-red/20 mb-3">
             <Layers className="w-3.5 h-3.5" />
             <span>Jejak Flagship Gathering (ITCG)</span>
@@ -76,7 +76,7 @@ export const ItcgHistory: React.FC<ItcgHistoryProps> = ({ onPhotoClick }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.25 }}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-start"
           >
             {/* Event Details Card */}
             <div className="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm space-y-6">

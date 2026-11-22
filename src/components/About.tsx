@@ -18,10 +18,10 @@ export const About: React.FC = () => {
   ];
 
   return (
-    <section id="tentang" className="py-20 lg:py-28 relative scroll-mt-20 border-t border-slate-200/70 dark:border-slate-800/70">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="tentang" className="py-20 md:py-24 lg:py-28 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-white dark:bg-[#060d1a]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 md:space-y-16">
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-4xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20 dark:border-blue-400/20">
             <Award className="w-3.5 h-3.5" />
             <span>Tentang Komunitas • Berdiri Sejak 2006</span>
@@ -57,7 +57,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Animated Community Metrics */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {siteConfig.metrics.map((metric, idx) => (
             <div
               key={idx}
@@ -83,7 +83,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Chairman Quote Card */}
-        <div className="relative mb-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-brand-navy/5 via-slate-50 to-brand-navy/5 dark:from-dark-card dark:via-dark-surface dark:to-dark-card border border-brand-navy/15 dark:border-dark-border shadow-sm overflow-hidden">
+        <div className="relative p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-brand-navy/5 via-slate-50 to-brand-navy/5 dark:from-dark-card dark:via-dark-surface dark:to-dark-card border border-brand-navy/15 dark:border-dark-border shadow-sm overflow-hidden">
           <div className="absolute top-4 right-6 text-brand-navy/10 dark:text-blue-500/10 pointer-events-none">
             <Quote className="w-24 h-24" />
           </div>
@@ -110,7 +110,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Nilai Inti CONNECT */}
-        <div className="mb-16">
+        <div>
           <div className="text-center max-w-2xl mx-auto mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-red/10 text-brand-red dark:bg-brand-red/20 dark:text-red-400 border border-brand-red/20 mb-2.5">
               <Sparkles className="w-3.5 h-3.5" />
@@ -147,7 +147,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Vision & Mission Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Vision Box */}
           <div className="lg:col-span-5 p-8 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-navy-light text-white shadow-xl relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">

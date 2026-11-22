@@ -19,10 +19,10 @@ export const ContactCollaboration: React.FC = () => {
   };
 
   return (
-    <section id="kontak" className="py-20 lg:py-28 relative scroll-mt-20 bg-slate-100/50 dark:bg-dark-surface/30 border-t border-slate-200/60 dark:border-dark-border/60">
+    <section id="kontak" className="py-20 md:py-24 lg:py-28 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-white dark:bg-[#060d1a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300 border border-emerald-500/20 mb-3">
             <Handshake className="w-3.5 h-3.5" />
             <span>Kolaborasi & Kemitraan</span>
@@ -35,10 +35,10 @@ export const ContactCollaboration: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch mb-12">
           {/* Card 1: Registrasi Member & Event Bulanan */}
-          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-brand-red/30 dark:border-brand-red/40 shadow-sm flex flex-col justify-between relative group hover:shadow-lg transition-all">
-            <div>
+          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-brand-red/30 dark:border-brand-red/40 shadow-sm flex flex-col h-full relative group hover:shadow-lg transition-all">
+            <div className="flex-1">
               <div className="flex items-center justify-between mb-4">
                 <div className="p-3 w-fit rounded-xl bg-brand-red/10 dark:bg-brand-red/20 text-brand-red dark:text-red-400">
                   <Users2 className="w-6 h-6" />
@@ -69,33 +69,35 @@ export const ContactCollaboration: React.FC = () => {
               </ul>
             </div>
 
-            <a
-              href={siteConfig.connectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-red hover:bg-brand-red-hover shadow-md transition-all active:scale-95"
-            >
-              <span>Daftar di Portal Connect</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            <div className="mt-auto pt-6">
+              <a
+                href={siteConfig.connectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-red hover:bg-brand-red-hover shadow-md transition-all active:scale-95"
+              >
+                <span>Daftar di Portal Connect</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
-          {/* Card 2: Pengajuan Presentasi Vendor */}
-          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
-            <div>
+          {/* Card 2: Kolaborasi Technology Partner */}
+          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col h-full hover:shadow-lg transition-all">
+            <div className="flex-1">
               <div className="flex items-center justify-between mb-4">
                 <div className="p-3 w-fit rounded-xl bg-brand-navy/10 dark:bg-blue-500/20 text-brand-navy dark:text-blue-300">
                   <Handshake className="w-6 h-6" />
                 </div>
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20">
-                  Vendor Solusi IT
+                  Tech Partner
                 </span>
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2.5">
-                Pengajuan Presentasi Vendor
+                Kolaborasi Technology Partner
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
-                Peluang bagi prinsipal dan vendor solusi teknologi (Cloud, ERP, Cyber Security, OT/IoT, Infrastructure) untuk presentasi teknologi di hadapan praktisi industri pada agenda bulanan.
+                Peluang bagi prinsipal dan mitra solusi teknologi (Cloud, ERP, Cyber Security, OT/IoT, Infrastructure) untuk presentasi teknologi di hadapan praktisi industri pada agenda bulanan.
               </p>
               <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 mb-6">
                 <li className="flex items-center gap-2">
@@ -113,29 +115,20 @@ export const ContactCollaboration: React.FC = () => {
               </ul>
             </div>
 
-            <div className="space-y-2 pt-2">
+            <div className="mt-auto pt-6">
               <a
-                href="mailto:official@komitkabe.id?subject=Pengajuan%20Presentasi%20Vendor%20Tech%20Sharing%20KOMITKABE"
+                href="mailto:official@komitkabe.id?subject=Pengajuan%20Sesi%20Tech%20Sharing%20KOMITKABE"
                 className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md transition-all active:scale-95"
               >
                 <Mail className="w-4 h-4" />
-                <span>Kirim Proposal ke Sekretariat</span>
-              </a>
-              <a
-                href="https://wa.me/628212299090?text=Halo%20Pengurus%20KOMITKABE%2C%20kami%20vendor%20teknologi%20ingin%20berkonsultasi%20mengenai%20slot%20presentasi%20sharing%20bulanan"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg font-semibold text-xs text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors text-center"
-              >
-                <MessageCircle className="w-3.5 h-3.5" />
-                <span>Konsultasi WA: +62 821-2299-090</span>
+                <span>Ajukan Sesi Tech Sharing</span>
               </a>
             </div>
           </div>
 
           {/* Card 3: Kemitraan Umum & Sponsorship ITCG */}
-          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
-            <div>
+          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col h-full hover:shadow-lg transition-all">
+            <div className="flex-1">
               <div className="flex items-center justify-between mb-4">
                 <div className="p-3 w-fit rounded-xl bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                   <Sparkles className="w-6 h-6" />
@@ -166,7 +159,7 @@ export const ContactCollaboration: React.FC = () => {
               </ul>
             </div>
 
-            <div className="space-y-2 pt-2">
+            <div className="mt-auto pt-6">
               <a
                 href={siteConfig.itcgUrl}
                 target="_blank"
@@ -175,13 +168,6 @@ export const ContactCollaboration: React.FC = () => {
               >
                 <span>Buka Portal ITCG</span>
                 <ExternalLink className="w-4 h-4 text-indigo-500" />
-              </a>
-              <a
-                href="mailto:partnership@komitkabe.id?subject=Inquiry%20Sponsorship%20%26%20Kemitraan%20KOMITKABE%20ITCG%202027"
-                className="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg font-semibold text-xs text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors text-center"
-              >
-                <Mail className="w-3.5 h-3.5" />
-                <span>Email Sponsor: partnership@komitkabe.id</span>
               </a>
             </div>
           </div>

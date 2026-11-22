@@ -65,10 +65,10 @@ export const Programs: React.FC = () => {
   ];
 
   return (
-    <section id="program" className="py-20 lg:py-28 relative scroll-mt-20 border-t border-slate-200/70 dark:border-slate-800/70 bg-slate-50/50 dark:bg-dark-surface/30">
+    <section id="program" className="py-20 md:py-24 lg:py-28 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-slate-50/70 dark:bg-[#0a1324]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20 dark:border-blue-400/20 mb-3">
             <Sparkles className="w-3.5 h-3.5 text-brand-red" />
             <span>Program & Layanan Komunitas</span>
@@ -82,7 +82,7 @@ export const Programs: React.FC = () => {
         </div>
 
         {/* 4 Balanced Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {programs.map((item) => {
             const Icon = item.icon;
             return (

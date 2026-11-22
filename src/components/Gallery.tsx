@@ -16,10 +16,10 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectPhoto }) => {
   });
 
   return (
-    <section id="galeri" className="py-20 lg:py-28 relative scroll-mt-20">
+    <section id="galeri" className="py-20 md:py-24 lg:py-28 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-slate-50/70 dark:bg-[#0a1324]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20 dark:border-blue-400/20 mb-3">
             <ImageIcon className="w-3.5 h-3.5" />
             <span>Dokumentasi Komunitas</span>
@@ -55,7 +55,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectPhoto }) => {
         {/* Photo Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
         >
           <AnimatePresence>
             {filteredItems.map((item) => (

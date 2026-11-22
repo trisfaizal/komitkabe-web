@@ -5,7 +5,7 @@ import { CountdownCard } from './CountdownCard';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[calc(100svh-4.5rem)] flex items-center pt-24 pb-16 lg:pt-28 lg:pb-24 overflow-hidden">
+    <section className="relative min-h-[calc(100svh-7.5rem)] flex items-center pt-16 pb-16 lg:pt-20 lg:pb-20 overflow-hidden">
       {/* Background Ambient Glows & Grid Pattern */}
       <div className="absolute inset-0 pointer-events-none -z-10">
         {/* Top-left Navy Glow */}
