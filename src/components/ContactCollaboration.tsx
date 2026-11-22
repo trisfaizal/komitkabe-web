@@ -117,7 +117,7 @@ export const ContactCollaboration: React.FC = () => {
 
             <div className="mt-auto pt-6">
               <a
-                href="mailto:official@komitkabe.id?subject=Pengajuan%20Sesi%20Tech%20Sharing%20KOMITKABE"
+                href="mailto:partnership@komitkabe.id?subject=Pengajuan%20Sesi%20Tech%20Sharing%20KOMITKABE"
                 className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md transition-all active:scale-95"
               >
                 <Mail className="w-4 h-4" />
