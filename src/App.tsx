@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { StatusTicker } from './components/StatusTicker';
 import { About } from './components/About';
 import { ItcgHistory } from './components/ItcgHistory';
 import { Gallery } from './components/Gallery';
@@ -49,6 +50,7 @@ export const App: React.FC = () => {
 
         <main className="flex-1">
           <Hero />
+          <StatusTicker />
           <About />
           <ItcgHistory onPhotoClick={handleHistoryPhotoClick} />
           <Gallery onSelectPhoto={handleSelectPhoto} />
