@@ -5,7 +5,7 @@ import { CountdownCard } from './CountdownCard';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[calc(100svh-7.5rem)] flex items-center pt-16 pb-16 lg:pt-20 lg:pb-20 overflow-hidden">
+    <section className="relative min-h-[calc(100svh-4.5rem)] flex flex-col justify-center py-24 md:py-28 lg:py-36 overflow-hidden">
       {/* Background Ambient Glows & Grid Pattern */}
       <div className="absolute inset-0 pointer-events-none -z-10">
         {/* Top-left Navy Glow */}
@@ -17,8 +17,8 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           {/* Left Column: Headline, Tagline, Value Props */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
             {/* Tagline Pill */}
