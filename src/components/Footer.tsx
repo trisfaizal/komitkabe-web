@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
               <img
                 src="/assets/dark-logo.webp"
                 alt={siteConfig.name}
-                className="h-9 md:h-10 w-auto object-contain filter brightness-110"
+                className="h-9 md:h-10 w-auto object-contain"
               />
 
               <p className="text-sm font-medium text-blue-100/90 leading-relaxed max-w-sm">

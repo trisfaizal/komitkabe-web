@@ -45,15 +45,22 @@ export const Navbar: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Text Only */}
+        {/* Brand Logo (Real WebP) */}
         <a
           href="#"
           className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-navy rounded-lg"
           aria-label="KOMITKABE Beranda"
         >
-          <span className="font-extrabold text-xl tracking-tight text-brand-navy dark:text-white select-none transition-colors">
-            KOM<span className="text-brand-red">I</span>TKABE
-          </span>
+          <img
+            src="/assets/light-logo.webp"
+            alt="KOMITKABE"
+            className="h-8 md:h-9 w-auto object-contain dark:hidden"
+          />
+          <img
+            src="/assets/dark-logo.webp"
+            alt="KOMITKABE"
+            className="h-8 md:h-9 w-auto object-contain hidden dark:block"
+          />
         </a>
 
         {/* Desktop Navigation */}
