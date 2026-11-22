@@ -13,14 +13,38 @@ export interface MetricItem {
   description: string;
 }
 
+export interface CoreValueItem {
+  letter: string;
+  word: string;
+  description: string;
+}
+
+export interface SteeringCommitteeMember {
+  name: string;
+  role: string;
+  company: string;
+}
+
 export interface SiteConfig {
   name: string;
   fullName: string;
   shortName: string;
   tagline: string;
+  motto: string;
   description: string;
+  historyIntro: string;
+  historySectors: string;
+  industrySectors: string[];
   vision: string;
   missions: string[];
+  coreValues: CoreValueItem[];
+  chairmanQuote: {
+    quote: string;
+    author: string;
+    role: string;
+    company: string;
+  };
+  steeringCommittee: SteeringCommitteeMember[];
   logos: {
     light: string;
     dark: string;
@@ -32,6 +56,7 @@ export interface SiteConfig {
   socials: SocialLink[];
   contact: {
     email: string;
+    partnershipEmail: string;
     whatsapp: string;
     address: string;
     region: string;
@@ -44,7 +69,18 @@ export const siteConfig: SiteConfig = {
   fullName: "Komunitas IT Kawasan Industri",
   shortName: "KOMITKABE",
   tagline: "Connecting people. Sharing knowledge. Building the future.",
-  description: "Berdiri sejak tahun 2006, KOMITKABE adalah wadah kolaboratif independen bagi para praktisi dan pimpinan IT di kawasan industri (Bekasi, Cikarang, Karawang, dan sekitarnya) yang aktif mengadakan pertemuan rutin bulanan bersama vendor teknologi serta gelaran akbar IT Community Gathering (ITCG).",
+  motto: "The Power of Collaborations",
+  description: "Berawal dari pertemuan para praktisi IT di Kawasan Industri EJIP dan Lippo Cikarang pada tahun 2006, KOMITKABE tumbuh menjadi komunitas profesional yang mempererat jejaring, mendorong pertukaran pengetahuan, dan membangun kolaborasi lintas perusahaan di kawasan industri.",
+  historyIntro: "Berawal dari pertemuan para praktisi IT di Kawasan Industri EJIP dan Lippo Cikarang pada tahun 2006, KOMITKABE tumbuh menjadi komunitas profesional yang mempererat jejaring, mendorong pertukaran pengetahuan, dan membangun kolaborasi lintas perusahaan di kawasan industri.",
+  historySectors: "Dengan anggota yang berasal dari beragam sektor—mulai dari otomotif, elektronik, farmasi, makanan dan minuman, logistik, hingga kesehatan—KOMITKABE menjadi ruang bagi para praktisi IT untuk memperluas wawasan, mengembangkan kompetensi, serta menjalankan pertemuan rutin bulanan bersama vendor teknologi dan gelaran akbar IT Community Gathering (ITCG).",
+  industrySectors: [
+    "Otomotif",
+    "Elektronik",
+    "Farmasi",
+    "Food & Beverage",
+    "Logistik",
+    "Kesehatan"
+  ],
   vision: "Menjadikan KOMITKABE komunitas IT terbaik dalam kuantitas dan kualitas di lingkungan kawasan industri.",
   missions: [
     "Memperkenalkan dan mempromosikan KOMITKABE sebagai komunitas untuk IT di kawasan industri",
@@ -52,6 +88,43 @@ export const siteConfig: SiteConfig = {
     "Sebagai sarana dan media untuk sharing knowledge dan upgrade knowledge",
     "Membuat kerjasama dengan pihak luar yang dianggap mampu berkontribusi terhadap kemajuan organisasi",
     "Berkontribusi pada masyarakat sekitarnya"
+  ],
+  coreValues: [
+    { letter: "C", word: "Collaboration", description: "Membangun sinergi dan kolaborasi teknologi lintas perusahaan di koridor industri." },
+    { letter: "O", word: "Ownership", description: "Memiliki rasa kepedulian bersama untuk memajukan komunitas dan anggotanya." },
+    { letter: "N", word: "Networking", description: "Menjalin jejaring profesional yang solid antar praktisi IT kawasan manufaktur." },
+    { letter: "N", word: "Noble Impact", description: "Menghadirkan dampak positif yang bernilai bagi industri, organisasi, dan masyarakat." },
+    { letter: "E", word: "Excellence", description: "Berkomitmen pada mutu, standar keandalan sistem, dan keunggulan kompetensi." },
+    { letter: "C", word: "Continuous Learning", description: "Terus meningkatkan wawasan dan beradaptasi dengan perkembangan teknologi terkini." },
+    { letter: "T", word: "Trust", description: "Menjaga integritas, keterbukaan, dan saling percaya dalam ekosistem profesional." }
+  ],
+  chairmanQuote: {
+    quote: "20 tahun adalah tonggak kebanggaan sekaligus awal perjalanan baru bagi KOMITKABE. Dengan semangat CONNECT, kita terus memperkuat persaudaraan, membangun kolaborasi, serta menghadirkan dampak positif bagi anggota, organisasi, dan masyarakat.",
+    author: "Miswadi Abu Ihsan",
+    role: "Chairman KOMITKABE",
+    company: "PT. Kiyokuni Indonesia"
+  },
+  steeringCommittee: [
+    {
+      name: "Miswadi Abu Ihsan",
+      role: "Chairman",
+      company: "PT. Kiyokuni Indonesia"
+    },
+    {
+      name: "Noviyanto Wijaya",
+      role: "Vice Chairman",
+      company: "PT. Kawashima Engineering Plastic Indonesia"
+    },
+    {
+      name: "Putri Khaerani",
+      role: "General Secretary",
+      company: "Jababeka"
+    },
+    {
+      name: "Heru Pramono",
+      role: "General Treasurer",
+      company: "PT. Nitto Materials Indonesia"
+    }
   ],
   logos: {
     light: "/assets/light-logo.webp",
@@ -89,6 +162,7 @@ export const siteConfig: SiteConfig = {
   ],
   contact: {
     email: "official@komitkabe.id",
+    partnershipEmail: "partnership@komitkabe.id",
     whatsapp: "+62 812-9000-8888",
     address: "Kawasan Industri Jababeka, Cikarang, Kab. Bekasi, Jawa Barat",
     region: "Bekasi — Cikarang — Karawang & Sekitarnya"

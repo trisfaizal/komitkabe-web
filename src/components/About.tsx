@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Compass, Award, Factory } from 'lucide-react';
+import { Target, Compass, Award, Factory, Quote, Sparkles } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { AnimatedCounter } from './AnimatedCounter';
 
@@ -21,21 +21,43 @@ export const About: React.FC = () => {
     <section id="tentang" className="py-20 lg:py-28 relative scroll-mt-20 border-t border-slate-200/70 dark:border-slate-800/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20 dark:border-blue-400/20 mb-3">
+        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20 dark:border-blue-400/20">
             <Award className="w-3.5 h-3.5" />
             <span>Tentang Komunitas • Berdiri Sejak 2006</span>
           </div>
+
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             Menghubungkan Praktisi IT di Jantung Manufaktur Nasional
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            {siteConfig.description}
+
+          <p className="text-base sm:text-lg text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
+            {siteConfig.historyIntro}
           </p>
+
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+            {siteConfig.historySectors}
+          </p>
+
+          {/* Industry Sectors Badges */}
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+            <span className="text-xs font-semibold text-slate-500 dark:text-dark-muted mr-1">
+              Sektor Industri Utama:
+            </span>
+            {siteConfig.industrySectors.map((sector, sIdx) => (
+              <span
+                key={sIdx}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white dark:bg-dark-card text-slate-700 dark:text-slate-200 border border-slate-200/90 dark:border-dark-border shadow-2xs"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-red" />
+                {sector}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Animated Community Metrics */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
           {siteConfig.metrics.map((metric, idx) => (
             <div
               key={idx}
@@ -60,13 +82,83 @@ export const About: React.FC = () => {
           ))}
         </div>
 
+        {/* Chairman Quote Card */}
+        <div className="relative mb-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-brand-navy/5 via-slate-50 to-brand-navy/5 dark:from-dark-card dark:via-dark-surface dark:to-dark-card border border-brand-navy/15 dark:border-dark-border shadow-sm overflow-hidden">
+          <div className="absolute top-4 right-6 text-brand-navy/10 dark:text-blue-500/10 pointer-events-none">
+            <Quote className="w-24 h-24" />
+          </div>
+          <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+            <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-navy text-white flex items-center justify-center shadow-md font-extrabold text-xl sm:text-2xl tracking-tight">
+              MI
+            </div>
+            <div className="flex-1 space-y-3">
+              <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300">
+                <span>Sambutan Chairman KOMITKABE</span>
+              </div>
+              <blockquote className="text-base sm:text-lg italic text-slate-800 dark:text-slate-200 leading-relaxed font-medium">
+                "{siteConfig.chairmanQuote.quote}"
+              </blockquote>
+              <div className="pt-1">
+                <div className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                  {siteConfig.chairmanQuote.author}
+                </div>
+                <div className="text-xs text-slate-500 dark:text-dark-muted font-medium">
+                  {siteConfig.chairmanQuote.role} • <span className="text-brand-navy dark:text-blue-400 font-semibold">{siteConfig.chairmanQuote.company}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Nilai Inti CONNECT */}
+        <div className="mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-red/10 text-brand-red dark:bg-brand-red/20 dark:text-red-400 border border-brand-red/20 mb-2.5">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Semangat & Nilai Inti Organisasi</span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              Nilai-Nilai Inti CONNECT
+            </h3>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              Tujuh pilar yang menjiwai setiap langkah, silaturahmi, dan kolaborasi seluruh praktisi IT di KOMITKABE.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 sm:gap-4">
+            {siteConfig.coreValues.map((val, idx) => (
+              <div
+                key={idx}
+                className="p-4 rounded-xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border hover:border-brand-navy/30 dark:hover:border-blue-500/30 hover:shadow-md transition-all flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="w-9 h-9 rounded-lg bg-brand-navy/10 dark:bg-blue-500/20 text-brand-navy dark:text-blue-300 font-black text-lg flex items-center justify-center mb-3 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                    {val.letter}
+                  </div>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-xs sm:text-sm mb-1.5 leading-snug">
+                    {val.word}
+                  </h4>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-dark-muted leading-relaxed">
+                  {val.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Vision & Mission Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
           {/* Vision Box */}
           <div className="lg:col-span-5 p-8 rounded-2xl bg-gradient-to-br from-brand-navy to-brand-navy-light text-white shadow-xl relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
-              <div className="p-3 w-fit rounded-xl bg-white/10 backdrop-blur-md mb-6 border border-white/20">
-                <Target className="w-6 h-6 text-white" />
+              <div className="flex items-center justify-between gap-2 mb-6">
+                <div className="p-3 w-fit rounded-xl bg-white/10 backdrop-blur-md border border-white/20">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/15 border border-white/25 text-blue-100">
+                  "{siteConfig.motto}"
+                </span>
               </div>
               <span className="text-xs uppercase tracking-wider font-semibold text-blue-200">
                 Visi Organisasi
@@ -122,6 +214,44 @@ export const About: React.FC = () => {
             <div className="mt-8 pt-6 border-t border-slate-100 dark:border-dark-border/60 text-xs text-slate-500 dark:text-dark-muted">
               Saling berbagi solusi, bukan sekadar teori implementasi.
             </div>
+          </div>
+        </div>
+
+        {/* Steering Committee Section */}
+        <div className="mb-16">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 border-b border-slate-200/80 dark:border-dark-border/80 pb-3">
+            <div>
+              <span className="text-xs uppercase tracking-wider font-bold text-brand-navy dark:text-blue-400">
+                Kepemimpinan Organisasi
+              </span>
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                Steering Committee KOMITKABE
+              </h3>
+            </div>
+            <span className="text-xs text-slate-500 dark:text-dark-muted font-medium">
+              Dewan Pengarah & Pengurus Inti
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {siteConfig.steeringCommittee.map((leader, lIdx) => (
+              <div
+                key={lIdx}
+                className="p-5 rounded-xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border hover:shadow-md transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 mb-2">
+                    {leader.role}
+                  </span>
+                  <h4 className="font-extrabold text-slate-900 dark:text-white text-base">
+                    {leader.name}
+                  </h4>
+                </div>
+                <p className="text-xs font-medium text-slate-500 dark:text-dark-muted mt-3 pt-3 border-t border-slate-100 dark:border-dark-border/50">
+                  {leader.company}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 

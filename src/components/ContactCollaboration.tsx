@@ -155,15 +155,24 @@ export const ContactCollaboration: React.FC = () => {
               </ul>
             </div>
 
-            <a
-              href={siteConfig.itcgUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-slate-800 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-dark-surface dark:hover:bg-dark-border border border-slate-200 dark:border-dark-border shadow-sm transition-all active:scale-95"
-            >
-              <span>Buka Portal ITCG</span>
-              <ExternalLink className="w-4 h-4 text-indigo-500" />
-            </a>
+            <div className="space-y-2 pt-2">
+              <a
+                href={siteConfig.itcgUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-slate-800 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-dark-surface dark:hover:bg-dark-border border border-slate-200 dark:border-dark-border shadow-sm transition-all active:scale-95"
+              >
+                <span>Buka Portal ITCG</span>
+                <ExternalLink className="w-4 h-4 text-indigo-500" />
+              </a>
+              <a
+                href="mailto:partnership@komitkabe.id?subject=Inquiry%20Sponsorship%20%26%20Kemitraan%20KOMITKABE%20ITCG%202027"
+                className="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg font-semibold text-xs text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors text-center"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                <span>Email Sponsor: partnership@komitkabe.id</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -198,8 +207,10 @@ export const ContactCollaboration: React.FC = () => {
             <MapPin className="w-4 h-4 text-brand-red shrink-0" />
             <span><strong>Wilayah Layanan:</strong> {siteConfig.contact.region}</span>
           </div>
-          <div>
-            <span><strong>Sekretariat:</strong> {siteConfig.contact.address}</span>
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            <span><strong>Sekretariat:</strong> <a href={`mailto:${siteConfig.contact.email}`} className="hover:underline">{siteConfig.contact.email}</a></span>
+            <span className="hidden sm:inline">•</span>
+            <span><strong>Kemitraan/Sponsor:</strong> <a href={`mailto:${siteConfig.contact.partnershipEmail}`} className="hover:underline text-indigo-600 dark:text-indigo-400 font-semibold">{siteConfig.contact.partnershipEmail}</a></span>
           </div>
         </div>
       </div>
