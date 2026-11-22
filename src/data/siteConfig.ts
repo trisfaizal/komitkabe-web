@@ -43,6 +43,7 @@ export interface SiteConfig {
     author: string;
     role: string;
     company: string;
+    avatar?: string;
   };
   steeringCommittee: SteeringCommitteeMember[];
   logos: {
@@ -103,7 +104,8 @@ export const siteConfig: SiteConfig = {
     quote: "20 tahun adalah tonggak kebanggaan sekaligus awal perjalanan baru bagi KOMITKABE. Dengan semangat CONNECT, kita terus memperkuat persaudaraan, membangun kolaborasi, serta menghadirkan dampak positif bagi anggota, organisasi, dan masyarakat.",
     author: "Miswadi Abu Ihsan",
     role: "Chairman KOMITKABE",
-    company: "PT. Kiyokuni Indonesia"
+    company: "PT. Kiyokuni Indonesia",
+    avatar: "/images/chairman.webp"
   },
   steeringCommittee: [
     {

@@ -82,7 +82,7 @@ export const CountdownCard: React.FC = () => {
         </div>
 
         <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-          Platform resmi registrasi keanggotaan praktisi IT kawasan serta informasi & pendaftaran pertemuan rutin bulanan (tech & vendor sharing).
+          Platform resmi keanggotaan praktisi IT kawasan serta informasi & pendaftaran pertemuan rutin bulanan (tech & vendor sharing).
         </p>
 
         <a

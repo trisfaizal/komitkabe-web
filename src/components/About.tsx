@@ -87,22 +87,21 @@ export const About: React.FC = () => {
           <div className="absolute top-4 right-6 text-brand-navy/10 dark:text-blue-500/10 pointer-events-none">
             <Quote className="w-24 h-24" />
           </div>
-          <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
-            <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-navy text-white flex items-center justify-center shadow-md font-extrabold text-xl sm:text-2xl tracking-tight">
-              MI
-            </div>
-            <div className="flex-1 space-y-3">
-              <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300">
-                <span>Sambutan Chairman KOMITKABE</span>
-              </div>
+          <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center gap-6">
+            <img
+              src="/images/chairman.webp"
+              alt={siteConfig.chairmanQuote.author}
+              className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 object-cover object-top rounded-2xl shadow-md border border-slate-200/90 dark:border-dark-border"
+            />
+            <div className="flex-1 space-y-3 text-center md:text-left">
               <blockquote className="text-base sm:text-lg italic text-slate-800 dark:text-slate-200 leading-relaxed font-medium">
                 "{siteConfig.chairmanQuote.quote}"
               </blockquote>
               <div className="pt-1">
-                <div className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                <div className="font-bold text-slate-900 dark:text-white text-base sm:text-lg">
                   {siteConfig.chairmanQuote.author}
                 </div>
-                <div className="text-xs text-slate-500 dark:text-dark-muted font-medium">
+                <div className="text-xs sm:text-sm text-slate-500 dark:text-dark-muted font-medium">
                   {siteConfig.chairmanQuote.role} • <span className="text-brand-navy dark:text-blue-400 font-semibold">{siteConfig.chairmanQuote.company}</span>
                 </div>
               </div>
@@ -214,44 +213,6 @@ export const About: React.FC = () => {
             <div className="mt-8 pt-6 border-t border-slate-100 dark:border-dark-border/60 text-xs text-slate-500 dark:text-dark-muted">
               Saling berbagi solusi, bukan sekadar teori implementasi.
             </div>
-          </div>
-        </div>
-
-        {/* Steering Committee Section */}
-        <div className="mb-16">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 border-b border-slate-200/80 dark:border-dark-border/80 pb-3">
-            <div>
-              <span className="text-xs uppercase tracking-wider font-bold text-brand-navy dark:text-blue-400">
-                Kepemimpinan Organisasi
-              </span>
-              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                Steering Committee KOMITKABE
-              </h3>
-            </div>
-            <span className="text-xs text-slate-500 dark:text-dark-muted font-medium">
-              Dewan Pengarah & Pengurus Inti
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {siteConfig.steeringCommittee.map((leader, lIdx) => (
-              <div
-                key={lIdx}
-                className="p-5 rounded-xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border hover:shadow-md transition-all flex flex-col justify-between"
-              >
-                <div>
-                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 mb-2">
-                    {leader.role}
-                  </span>
-                  <h4 className="font-extrabold text-slate-900 dark:text-white text-base">
-                    {leader.name}
-                  </h4>
-                </div>
-                <p className="text-xs font-medium text-slate-500 dark:text-dark-muted mt-3 pt-3 border-t border-slate-100 dark:border-dark-border/50">
-                  {leader.company}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
 

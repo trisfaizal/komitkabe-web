@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Cpu, Network, Users, ExternalLink, ArrowDown } from 'lucide-react';
+import { ShieldCheck, Cpu, Network, Users, ArrowRight, ArrowDown } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { CountdownCard } from './CountdownCard';
 
@@ -63,13 +63,11 @@ export const Hero: React.FC = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
               <a
-                href={siteConfig.connectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#tentang"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md shadow-brand-navy/25 transition-all duration-200 active:scale-95"
               >
-                <span>Daftar Member di Connect</span>
-                <ExternalLink className="w-4 h-4" />
+                <span>Mengenal KOMITKABE</span>
+                <ArrowRight className="w-4 h-4" />
               </a>
 
               <a
