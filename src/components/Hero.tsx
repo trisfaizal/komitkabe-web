@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ShieldCheck, Cpu, Network, Users } from 'lucide-react';
+import { ShieldCheck, Cpu, Network, Users, ExternalLink, ArrowDown } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { CountdownCard } from './CountdownCard';
 
@@ -63,18 +63,21 @@ export const Hero: React.FC = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
               <a
-                href="#tentang"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md shadow-brand-navy/25 transition-all duration-200 active:scale-95"
+                href={siteConfig.connectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md shadow-brand-navy/25 transition-all duration-200 active:scale-95"
               >
-                <span>Mengenal KOMITKABE</span>
-                <ArrowRight className="w-4 h-4" />
+                <span>Daftar Member di Connect</span>
+                <ExternalLink className="w-4 h-4" />
               </a>
 
               <a
-                href="#itcg"
+                href="#program"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-700 dark:text-slate-200 bg-white/80 dark:bg-dark-surface hover:bg-slate-100 dark:hover:bg-dark-card border border-slate-300 dark:border-dark-border transition-all duration-200 active:scale-95"
               >
-                <span>Jejak Event ITCG</span>
+                <span>Lihat Program Kami</span>
+                <ArrowDown className="w-4 h-4" />
               </a>
             </div>
           </div>

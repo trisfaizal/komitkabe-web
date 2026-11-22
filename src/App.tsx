@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { StatusTicker } from './components/StatusTicker';
 import { About } from './components/About';
+import { Programs } from './components/Programs';
 import { ItcgHistory } from './components/ItcgHistory';
 import { Gallery } from './components/Gallery';
 import { ContactCollaboration } from './components/ContactCollaboration';
@@ -26,7 +27,7 @@ export const App: React.FC = () => {
     const tempItem: GalleryItem = {
       id: `history-${Date.now()}`,
       title,
-      category: 'itcg-2024',
+      category: 'itcg',
       year: 2024,
       url,
       caption,
@@ -52,6 +53,7 @@ export const App: React.FC = () => {
           <Hero />
           <StatusTicker />
           <About />
+          <Programs />
           <ItcgHistory onPhotoClick={handleHistoryPhotoClick} />
           <Gallery onSelectPhoto={handleSelectPhoto} />
           <ContactCollaboration />

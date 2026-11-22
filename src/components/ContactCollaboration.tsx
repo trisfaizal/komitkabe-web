@@ -35,80 +35,134 @@ export const ContactCollaboration: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-12">
-          {/* Card: Ajakan Bergabung Praktisi */}
-          <div className="lg:col-span-6 p-8 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch mb-12">
+          {/* Card 1: Registrasi Member & Event Bulanan */}
+          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-brand-red/30 dark:border-brand-red/40 shadow-sm flex flex-col justify-between relative group hover:shadow-lg transition-all">
             <div>
-              <div className="p-3 w-fit rounded-xl bg-brand-navy/10 dark:bg-blue-500/20 text-brand-navy dark:text-blue-300 mb-6">
-                <Users2 className="w-6 h-6" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="p-3 w-fit rounded-xl bg-brand-red/10 dark:bg-brand-red/20 text-brand-red dark:text-red-400">
+                  <Users2 className="w-6 h-6" />
+                </div>
+                <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-brand-red/10 text-brand-red dark:bg-brand-red/20 dark:text-red-400 border border-brand-red/20">
+                  Wajib Praktisi IT
+                </span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                Untuk Praktisi IT Kawasan Industri
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2.5">
+                Registrasi Member & Event Bulanan
               </h3>
-              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                Apakah Anda bekerja di bagian IT Support, System/Network Engineer, ERP Consultant, OT Engineer, atau IT Management di perusahaan kawasan industri?
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
+                Seluruh praktisi IT di kawasan industri wajib mendaftar melalui portal resmi keanggotaan KOMITKABE Connect untuk mendapatkan identitas anggota serta reservasi tiket event bulanan.
               </p>
-              <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-8">
+              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 mb-6">
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-navy dark:bg-blue-400" />
-                  <span>Akses grup diskusi & troubleshooting langsung antar rekan seprofesi</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0" />
+                  <span>Registrasi akun anggota resmi & ID Member</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-navy dark:bg-blue-400" />
-                  <span>Prioritas tiket pendaftaran seminar & workshop IT Community Gathering</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0" />
+                  <span>Jadwal & pendaftaran meetup bulanan</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-navy dark:bg-blue-400" />
-                  <span>Informasi karir, benchmark teknologi, dan kunjungan industri</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0" />
+                  <span>Akses direktori jejaring praktisi industri</span>
                 </li>
               </ul>
             </div>
 
             <a
-              href="https://wa.me/6281290008888?text=Halo%20Pengurus%20KOMITKABE%2C%20saya%20praktisi%20IT%20ingin%20bergabung%20dengan%20komunitas"
+              href={siteConfig.connectUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl font-bold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md transition-all active:scale-95"
+              className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-red hover:bg-brand-red-hover shadow-md transition-all active:scale-95"
             >
-              <MessageCircle className="w-4 h-4" />
-              <span>Gabung Komunitas (WhatsApp)</span>
+              <span>Daftar di Portal Connect</span>
+              <ExternalLink className="w-4 h-4" />
             </a>
           </div>
 
-          {/* Card: Kemitraan & Sponsorship */}
-          <div className="lg:col-span-6 p-8 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col justify-between">
+          {/* Card 2: Pengajuan Presentasi Vendor */}
+          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
             <div>
-              <div className="p-3 w-fit rounded-xl bg-brand-red/10 dark:bg-brand-red/20 text-brand-red dark:text-red-400 mb-6">
-                <Sparkles className="w-6 h-6" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="p-3 w-fit rounded-xl bg-brand-navy/10 dark:bg-blue-500/20 text-brand-navy dark:text-blue-300">
+                  <Handshake className="w-6 h-6" />
+                </div>
+                <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-brand-navy/10 text-brand-navy dark:bg-blue-500/20 dark:text-blue-300 border border-brand-navy/20">
+                  Vendor Solusi IT
+                </span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                Kemitraan Vendor, Sponsor & Media
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2.5">
+                Pengajuan Presentasi Vendor
               </h3>
-              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                Kenalkan solusi teknologi Anda secara langsung kepada ratusan pengambil keputusan (decision makers) dan profesional IT di koridor manufaktur terbesar Asia Tenggara.
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
+                Peluang bagi prinsipal dan vendor solusi teknologi (Cloud, ERP, Cyber Security, OT/IoT, Infrastructure) untuk presentasi teknologi di hadapan praktisi industri pada agenda bulanan.
               </p>
-              <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-8">
+              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 mb-6">
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red dark:bg-red-400" />
-                  <span>Slot Booth Pameran & Live Demo di IT Community Gathering</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-navy dark:bg-blue-400 shrink-0" />
+                  <span>Slot presentasi & live product showcase</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red dark:bg-red-400" />
-                  <span>Peluang Keynote Presentation & Tech Talk Session</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-navy dark:bg-blue-400 shrink-0" />
+                  <span>Diskusi use-case langsung dengan IT Manager</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red dark:bg-red-400" />
-                  <span>Branding resmi di seluruh materi publikasi & website portal</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-navy dark:bg-blue-400 shrink-0" />
+                  <span>Kurasi materi oleh pengurus KOMITKABE</span>
                 </li>
               </ul>
             </div>
 
             <a
-              href="mailto:official@komitkabe.id?subject=Pengajuan%20Kemitraan%20%2F%20Sponsorship%20KOMITKABE"
-              className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl font-bold text-slate-800 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-dark-surface dark:hover:bg-dark-border border border-slate-200 dark:border-dark-border transition-all active:scale-95"
+              href="mailto:official@komitkabe.id?subject=Pengajuan%20Presentasi%20Vendor%20Tech%20Sharing%20KOMITKABE"
+              className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md transition-all active:scale-95"
             >
-              <Mail className="w-4 h-4 text-brand-red" />
-              <span>Hubungi Sekretariat via Email</span>
+              <Mail className="w-4 h-4" />
+              <span>Kirim Proposal ke Sekretariat</span>
+            </a>
+          </div>
+
+          {/* Card 3: Kemitraan Umum & Sponsorship ITCG */}
+          <div className="p-7 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="p-3 w-fit rounded-xl bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
+                  <Sparkles className="w-6 h-6" />
+                </div>
+                <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-300 border border-indigo-500/20">
+                  Flagship Gathering
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2.5">
+                Kemitraan & Sponsor ITCG
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
+                Kerja sama strategis, sponsor utama, dan pemesanan booth eksibisi pameran teknologi di konferensi akbar IT Community Gathering (ITCG). Dikelola khusus di portal ITCG.
+              </p>
+              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 mb-6">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+                  <span>30+ Booth pameran & exclusive keynote slot</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+                  <span>Branding nasional di seluruh media event</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+                  <span>Informasi sponsorship & registrasi di portal ITCG</span>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href={siteConfig.itcgUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-slate-800 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-dark-surface dark:hover:bg-dark-border border border-slate-200 dark:border-dark-border shadow-sm transition-all active:scale-95"
+            >
+              <span>Buka Portal ITCG</span>
+              <ExternalLink className="w-4 h-4 text-indigo-500" />
             </a>
           </div>
         </div>

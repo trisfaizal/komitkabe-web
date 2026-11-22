@@ -38,7 +38,7 @@ export const itcgUpcoming: ItcgUpcomingConfig = {
     status: "open",
     statusLabel: "Pendaftaran & Sponsorship Dibuka",
     quotaText: "300+ IT Leaders & Practitioners (30 Technical Exhibition Booths)",
-    portalUrl: "https://itcg.komitkabe.org",
+    portalUrl: "https://itcg.komitkabe.id",
     isLive: false
   },
   highlights: [

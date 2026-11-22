@@ -8,19 +8,19 @@ interface TickerMessage {
 
 const tickerMessages: TickerMessage[] = [
   {
-    tag: 'SYS_STATUS: ACTIVE_BUILD',
-    type: 'status',
-    text: 'KOMITKABE.ID sedang dalam tahap pembaruan sistem & penyempurnaan modul antarmuka.'
-  },
-  {
-    tag: 'CONTINUOUS_IMPROVEMENT',
-    type: 'info',
-    text: 'Beberapa bagian konten & arsip dokumentasi sedang disinkronkan secara bertahap.'
-  },
-  {
-    tag: 'PORTAL_ITCG: ONLINE',
+    tag: 'PORTAL_CONNECT: ACTIVE',
     type: 'live',
-    text: 'Informasi & pendaftaran 6th IT Community Gathering 2027 tetap beroperasi normal melalui portal resmi.'
+    text: 'Registrasi keanggotaan resmi & pendaftaran sharing event bulanan aktif di connect.komitkabe.id.'
+  },
+  {
+    tag: 'PORTAL_UTAMA: ONLINE',
+    type: 'status',
+    text: 'KOMITKABE.ID beroperasi sebagai portal induk organisasi, direktori program & ekosistem kawasan.'
+  },
+  {
+    tag: 'PORTAL_ITCG: 2027',
+    type: 'info',
+    text: 'Informasi rundown & sponsorship 6th IT Community Gathering 2027 dapat diakses via itcg.komitkabe.id.'
   },
   {
     tag: 'NODE: BEKASI • CIKARANG • KARAWANG',

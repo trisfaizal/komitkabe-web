@@ -26,6 +26,8 @@ export interface SiteConfig {
     dark: string;
     footerWave: string;
   };
+  connectUrl: string;
+  itcgUrl: string;
   itcgPortalUrl: string;
   socials: SocialLink[];
   contact: {
@@ -56,7 +58,9 @@ export const siteConfig: SiteConfig = {
     dark: "/assets/dark-logo.webp",
     footerWave: "/assets/komitkabe-footer-waves.svg"
   },
-  itcgPortalUrl: "https://itcg.komitkabe.org",
+  connectUrl: "https://connect.komitkabe.id/",
+  itcgUrl: "https://itcg.komitkabe.id",
+  itcgPortalUrl: "https://itcg.komitkabe.id",
   socials: [
     {
       platform: "LinkedIn",

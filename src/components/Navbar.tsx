@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { label: 'Tentang', href: '#tentang' },
-    { label: 'ITCG', href: '#itcg' },
+    { label: 'Program', href: '#program' },
     { label: 'Galeri', href: '#galeri' },
     { label: 'Kontak', href: '#kontak' },
   ];
@@ -116,14 +116,14 @@ export const Navbar: React.FC = () => {
             )}
           </div>
 
-          {/* Quick CTA to ITCG Portal */}
+          {/* Quick CTA to Member Portal Connect */}
           <a
-            href={siteConfig.itcgPortalUrl}
+            href={siteConfig.connectUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-sm transition-all duration-200 active:scale-95"
           >
-            <span>Portal ITCG</span>
+            <span>Portal Member</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
@@ -199,12 +199,12 @@ export const Navbar: React.FC = () => {
 
           <div className="pt-3">
             <a
-              href={siteConfig.itcgPortalUrl}
+              href={siteConfig.connectUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-center font-semibold text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600"
             >
-              <span>Kunjungi Portal ITCG</span>
+              <span>Portal Member (Connect)</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
