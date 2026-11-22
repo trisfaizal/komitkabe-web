@@ -113,13 +113,24 @@ export const ContactCollaboration: React.FC = () => {
               </ul>
             </div>
 
-            <a
-              href="mailto:official@komitkabe.id?subject=Pengajuan%20Presentasi%20Vendor%20Tech%20Sharing%20KOMITKABE"
-              className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md transition-all active:scale-95"
-            >
-              <Mail className="w-4 h-4" />
-              <span>Kirim Proposal ke Sekretariat</span>
-            </a>
+            <div className="space-y-2 pt-2">
+              <a
+                href="mailto:official@komitkabe.id?subject=Pengajuan%20Presentasi%20Vendor%20Tech%20Sharing%20KOMITKABE"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-brand-navy hover:bg-brand-navy-light dark:bg-blue-600 dark:hover:bg-blue-500 shadow-md transition-all active:scale-95"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Kirim Proposal ke Sekretariat</span>
+              </a>
+              <a
+                href="https://wa.me/628212299090?text=Halo%20Pengurus%20KOMITKABE%2C%20kami%20vendor%20teknologi%20ingin%20berkonsultasi%20mengenai%20slot%20presentasi%20sharing%20bulanan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg font-semibold text-xs text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors text-center"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                <span>Konsultasi WA: +62 821-2299-090</span>
+              </a>
+            </div>
           </div>
 
           {/* Card 3: Kemitraan Umum & Sponsorship ITCG */}
@@ -209,6 +220,8 @@ export const ContactCollaboration: React.FC = () => {
           </div>
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span><strong>Sekretariat:</strong> <a href={`mailto:${siteConfig.contact.email}`} className="hover:underline">{siteConfig.contact.email}</a></span>
+            <span className="hidden sm:inline">•</span>
+            <span><strong>WhatsApp:</strong> <a href={siteConfig.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:underline text-emerald-600 dark:text-emerald-400 font-semibold">{siteConfig.contact.whatsapp}</a></span>
             <span className="hidden sm:inline">•</span>
             <span><strong>Kemitraan/Sponsor:</strong> <a href={`mailto:${siteConfig.contact.partnershipEmail}`} className="hover:underline text-indigo-600 dark:text-indigo-400 font-semibold">{siteConfig.contact.partnershipEmail}</a></span>
           </div>

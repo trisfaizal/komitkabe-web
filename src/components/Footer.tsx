@@ -87,6 +87,9 @@ export const Footer: React.FC = () => {
               <p className="text-xs text-blue-200">
                 Email: <a href={`mailto:${siteConfig.contact.email}`} className="underline hover:text-white">{siteConfig.contact.email}</a>
               </p>
+              <p className="text-xs text-blue-200">
+                WhatsApp: <a href={siteConfig.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">{siteConfig.contact.whatsapp}</a>
+              </p>
 
               {/* Social Media Icons */}
               <div className="flex items-center gap-2 pt-2">
@@ -109,7 +112,7 @@ export const Footer: React.FC = () => {
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://wa.me/6281290008888"
+                  href={siteConfig.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp Komunitas"

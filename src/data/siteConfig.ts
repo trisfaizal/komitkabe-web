@@ -58,6 +58,7 @@ export interface SiteConfig {
     email: string;
     partnershipEmail: string;
     whatsapp: string;
+    whatsappUrl: string;
     address: string;
     region: string;
   };
@@ -149,8 +150,8 @@ export const siteConfig: SiteConfig = {
     },
     {
       platform: "WhatsApp",
-      label: "Komunitas Pengurus KOMITKABE",
-      url: "https://wa.me/6281290008888",
+      label: "+62 821-2299-090",
+      url: "https://wa.me/628212299090?text=Halo%20Pengurus%20KOMITKABE%2C%20saya%20ingin%20bertanya%20mengenai%20komunitas",
       icon: "whatsapp"
     },
     {
@@ -163,7 +164,8 @@ export const siteConfig: SiteConfig = {
   contact: {
     email: "official@komitkabe.id",
     partnershipEmail: "partnership@komitkabe.id",
-    whatsapp: "+62 812-9000-8888",
+    whatsapp: "+62 821-2299-090",
+    whatsappUrl: "https://wa.me/628212299090?text=Halo%20Pengurus%20KOMITKABE%2C%20saya%20ingin%20bertanya%20mengenai%20komunitas",
     address: "Kawasan Industri Jababeka, Cikarang, Kab. Bekasi, Jawa Barat",
     region: "Bekasi — Cikarang — Karawang & Sekitarnya"
   },
