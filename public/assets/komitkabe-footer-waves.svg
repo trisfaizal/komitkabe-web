@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 260" width="1600" height="260" fill="none">
+  <title>KOMITKABE red white navy footer waves</title>
+  <!-- Transparent canvas; the page background remains visible above the waves. -->
+  <path d="M0 42 C260 145 560 205 860 196 C1160 188 1400 120 1600 58 L1600 260 L0 260 Z" fill="#F4F7FC"/>
+  <path d="M0 92 C270 180 560 225 850 214 C1140 203 1390 144 1600 88 L1600 260 L0 260 Z" fill="#F10D2F"/>
+  <path d="M0 142 C300 195 570 245 860 236 C1150 228 1390 190 1600 132 L1600 260 L0 260 Z" fill="#092F78"/>
+  <path d="M0 142 C300 195 570 245 860 236 C1150 228 1390 190 1600 132" stroke="#092F78" stroke-width="2" opacity=".18"/>
+</svg>
