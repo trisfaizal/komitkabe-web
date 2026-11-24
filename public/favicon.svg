@@ -1,24 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Background Rounded Square -->
-  <rect x="16" y="16" width="480" height="480" rx="108" fill="#ffffff" stroke="#e2e8f0" stroke-width="12"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="komitkabe-navy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Aksen Siluet Industri & Gear (Navy) -->
-  <path d="M236 168 L272 132 V168 L308 132 V196 H236 Z" fill="#092f78" opacity="0.22"/>
-  <circle cx="348" cy="256" r="46" fill="none" stroke="#092f78" stroke-width="22" stroke-dasharray="20 14" opacity="0.25"/>
+  <!-- Circle Emblem Background -->
+  <circle cx="32" cy="32" r="31" fill="url(#komitkabe-navy-grad)"/>
 
-  <!-- Batang Vertikal Huruf K (Navy #092f78) -->
-  <rect x="136" y="116" width="68" height="280" rx="12" fill="#092f78"/>
-  <path d="M170 148 V224 L154 240 V310" fill="none" stroke="#f10d2f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="170" cy="148" r="9" fill="#f10d2f"/>
-  <circle cx="154" cy="310" r="9" fill="#ffffff"/>
+  <!-- Left/Top Red Accent Arc (Official KOMITKABE Crescent Ring) -->
+  <path d="M 13 42 A 23 23 0 0 1 38 9" fill="none" stroke="#E11D48" stroke-width="3.5" stroke-linecap="round"/>
 
-  <!-- Lengan Diagonal Atas Huruf K (Red #f10d2f) -->
-  <path d="M192 268 L324 116 H398 L252 282 Z" fill="#f10d2f"/>
-  <path d="M234 256 L332 144 H356" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="356" cy="144" r="8" fill="#ffffff"/>
+  <!-- Monogram Letter K (Vertical Stem) -->
+  <rect x="19" y="17" width="6" height="30" rx="1.5" fill="#FFFFFF"/>
 
-  <!-- Lengan Diagonal Bawah Huruf K (Red #f10d2f) -->
-  <path d="M232 246 L398 396 H320 L194 280 Z" fill="#f10d2f"/>
-  <path d="M242 284 L328 364 H352" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="352" cy="364" r="8" fill="#ffffff"/>
+  <!-- Upper Diagonal Arm -->
+  <polygon points="23,33 37,17 44,17 27,36" fill="#FFFFFF"/>
+
+  <!-- Lower Diagonal Arm -->
+  <polygon points="25,31 43,47 36,47 22,35" fill="#FFFFFF"/>
+
+  <!-- Red Accent Dot on Upper Arm Tip -->
+  <circle cx="44" cy="17" r="3" fill="#E11D48"/>
 </svg>

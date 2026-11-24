@@ -19,7 +19,7 @@ export const ContactCollaboration: React.FC = () => {
   };
 
   return (
-    <section id="kontak" className="py-20 md:py-24 lg:py-28 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-white dark:bg-[#060d1a]">
+    <section id="kontak" className="pt-20 md:pt-24 lg:pt-28 pb-28 sm:pb-32 md:pb-40 relative scroll-mt-20 md:scroll-mt-24 border-t border-slate-200/60 dark:border-slate-800/60 bg-white dark:bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">

@@ -4,7 +4,7 @@ import { siteConfig } from '../data/siteConfig';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative w-full overflow-hidden mt-12">
+    <footer className="relative z-10 w-full overflow-hidden -mt-20 sm:-mt-24 md:-mt-32">
       {/* SVG Footer Waves */}
       <div className="w-full leading-none pointer-events-none select-none">
         <img
